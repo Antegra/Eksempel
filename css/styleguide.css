@@ -1,0 +1,22 @@
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	background: yellow;
+	top: 0px;
+	left: 0px;
+
+}
+
+.navUl {
+	font-size: 5vw;
+	list-style: none;
+
+}
