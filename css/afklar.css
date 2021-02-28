@@ -1,0 +1,100 @@
+
+
+* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+
+.BeCurious {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(250,251,251,1);
+		overflow: hidden;
+		--web-view-name: BeCurious;
+		--web-view-id: BeCurious;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+.topDeler {
+		opacity: 0.5;
+		height: 44px;
+		margin-top: 10px;
+		width: 1000px;
+	}
+
+.topDelerRect {
+		width: 100%;
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+}
+
+.lightGreen {
+
+		fill: rgba(166,187,117,1);
+		stroke: rgba(166,187,117,1);
+}
+
+.topDelerSvg {
+		overflow: visible;
+		width: 1517px;
+		height: 44px;
+		left: 0px;
+		top: 0px;
+	}
+
+.topDelerText {
+		
+		overflow: visible;
+		position: absolute;
+		align-self: center;
+		width: 145px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Roboto Mono;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+
+.mainGrid {
+	display: grid;
+	grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.4fr;
+  grid-template-rows: 1.8fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+	"info1 . info2 . info3 . info4 ."
+	"info1 . info2 . info3 . info4 nextButton";
+}
+
+.info {
+	float: right;
+ box-shadow: 2px 2px  #FF6821;
+ padding: 0px;
+ height: 500px;
+ justify-self: start;
+}
+
+
+.info1 { 
+	grid-area: info1;
+}
+
+.info2 { 
+	grid-area: info2; 
+}
+
+.info3 { 
+	grid-area: info3; 
+}
+
+.info4 { 
+	grid-area: info4; 
+}
+
+.nextButton { grid-area: nextButton; }
