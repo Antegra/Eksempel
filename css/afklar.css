@@ -105,119 +105,146 @@ html {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.8fr 0.1fr 2fr 0.15fr 0.7fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "title"
-    "faser"
-    "topDeler"
-    "info"
-    "bundDeler"
-    "bundKnap";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.2fr 0.6fr 0.1fr 2fr 0.15fr 0.7fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	"title"
+	"faser"
+	"topDeler"
+	"info"
+	"bundDeler"
+	"bund";
 }
 
 .title {
-  grid-area: title;
+	grid-area: title;
+	font-family: open sans;
 }
 
 .faser {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
-  grid-template-rows: 1fr 0.2fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "fase1img . fase2img . fase3img . fase4img . fase5img"
-    "fase1Title . fase2Title . fase3Title . fase4Title . fase5Title";
-  grid-area: faser;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+	grid-template-rows: 0.6fr 0.2fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	"fase1img . fase2img . fase3img . fase4img . fase5img"
+	"fase1Title . fase2Title . fase3Title . fase4Title . fase5Title";
+	grid-area: faser;
+	place-items: center;
 }
 
 .fase1img {
-  grid-area: fase1img;
+	grid-area: fase1img;
 }
 
 .fase2img {
-  grid-area: fase2img;
+	grid-area: fase2img;
 }
 
 .fase3img {
-  grid-area: fase3img;
+	grid-area: fase3img;
 }
 
 .fase4img {
-  grid-area: fase4img;
+	grid-area: fase4img;
 }
 
 .fase5img {
-  grid-area: fase5img;
+	grid-area: fase5img;
 }
 
 .fase1Title {
-  grid-area: fase1Title;
+	grid-area: fase1Title;
 }
 
 .fase2Title {
-  grid-area: fase2Title;
+	grid-area: fase2Title;
 }
 
 .fase3Title {
-  grid-area: fase3Title;
+	grid-area: fase3Title;
 }
 
 .fase4Title {
-  grid-area: fase4Title;
+	grid-area: fase4Title;
 }
 
 .fase5Title {
-  grid-area: fase5Title;
+	grid-area: fase5Title;
 }
 
 .topDeler {
-  grid-area: topDeler;
-  background-color: rgba(166,187,117,1);
+	grid-area: topDeler;
+	background-color: rgba(166,187,117,1);
+	border-radius: 25px;
 }
 
 .info {
-  display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
-  grid-template-rows: 1.8fr 0.2fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "info1 . info2 . info3 . info4 ."
-    "info1 . info2 . info3 . info4 nextButton";
-  grid-area: info;
+	display: grid;
+	grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
+	grid-template-rows: 1.6fr 0.4fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	"info1 . info2 . info3 . info4 ."
+	"info1 . info2 . info3 . info4 nextButton";
+	grid-area: info;
+	font-family: open sans;
 }
 
 .info1 {
-  grid-area: info1;
+	grid-area: info1;
 }
 
 .info2 {
-  grid-area: info2;
+	grid-area: info2;
 }
 
 .info3 {
-  grid-area: info3;
+	grid-area: info3;
 }
 
 .info4 {
-  grid-area: info4;
+	grid-area: info4;
 }
 
 .nextButton { 
-  grid-area: nextButton;
+	display: grid;
+	grid-area: nextButton;
+	position: relative;
+	place-items: center;
+	
 }
 
-#nextButtonKnap {
-  background-color: #D26D75;
+.nextButtonKnap {
+	position: absolute;
+	place-items: center;
+	margin-bottom: 10px;
+
 }
 
 .bundDeler { 
-  grid-area: bundDeler;
-  background-color: rgba(166,187,117,1); 
+	grid-area: bundDeler;
+	background-color: rgba(166,187,117,1);
+	border-radius: 25px; 
 }
 
-.bundKnap { 
-  grid-area: bundKnap; 
+.bund { 
+	display: grid;
+	grid-area: bund; 
+	position: relative;
+	width: 100%;
+	text-align: center;
+	place-items: center;
+}
+
+.bundKnap {
+	position: absolute;
+	z-index: -1;
+}
+
+.bund p {
+	font-family: Roboto Mono;
+	color: white;
 }
