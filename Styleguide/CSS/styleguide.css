@@ -1,7 +1,7 @@
 	.header-nav .logo,
 	.single-nav .logo, {
 		text-indent: -9999px;
-		overflow: hidden
+		overflow: hidden;
 	}
 
 .project_content > h3{
@@ -10,7 +10,7 @@
 
 .image-slide,
 .section-banner, {
-	position: relative
+	position: relative;
 }
 
 .section-banner:before, {
@@ -20,7 +20,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	content: ""
+	content: "";
 }
 
 .inview {
@@ -986,7 +986,7 @@ h2 p {
 
 
 .row {
-	overflow: hidden
+	overflow: hidden;
 	margin-top: 50px;
 	margin-left: -100px
 }
@@ -996,7 +996,7 @@ h2 p {
 	background-size: cover;
 	background-color: #f0f0f0;
 	position: relative;
-	overflow: hidden
+	overflow: hidden;
 }
 
 @media (max-width: 1200px) {
