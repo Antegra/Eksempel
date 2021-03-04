@@ -9,7 +9,7 @@
 /*
 var nextButton = document.getElementById("next_button");
 
-var faserArray = ["fase_1", "fase_2", "fase_3", "fase_4", "fase_5"]; 
+var faserArray = ["fase_1", "fase_2", "fase_3", "fase_4", "fase_5"];
 
 var currentFase = 0
 
@@ -19,9 +19,9 @@ function nextFase(){
 	for (var i = currentFase; i < faserArray.length; i++) {
 	 	faserArray[i].style.display = 'none';
 	 	faserArray[i + 1].style.display = 'block';
-	 } 
+	 }
 	 //if (faserArray[i].style.display = 'block') {
-	 		
+
 //}
 }
 */
@@ -54,7 +54,7 @@ function nextFase() {
     var faseElementer = [];
     for (var i = 0; i < faserArray.length; i++) {
         faseElementer.push(document.getElementById(faserArray[i]));
-        console.log(faseElementer);   
+        console.log(faseElementer);
     }
     for (var i = 0; i < showing.length; i++) {
         if (showing[i] == 1) {
@@ -69,9 +69,110 @@ function nextFase() {
             }
             break;
         }
-    }      
+    }
 }
 
+//ALLE FUNKTIONER TIL BUTTONS FASE 1
+function fase1button2(){
+        fase_1.style.display = 'none';
+				fase_2.style.display = 'block';
+}
 
+function fase1button3(){
+        fase_1.style.display = 'none';
+				fase_3.style.display = 'block';
+}
 
+function fase1button4(){
+        fase_1.style.display = 'none';
+				fase_4.style.display = 'block';
+}
 
+function fase1button5(){
+        fase_1.style.display = 'none';
+				fase_5.style.display = 'block';
+}
+
+//ALLE FUNKTIONER TIL BUTTONS FASE 2
+function fase2button1(){
+        fase_2.style.display = 'none';
+				fase_1.style.display = 'block';
+}
+
+function fase2button3(){
+        fase_2.style.display = 'none';
+				fase_3.style.display = 'block';
+}
+
+function fase2button4(){
+        fase_2.style.display = 'none';
+				fase_4.style.display = 'block';
+}
+
+function fase2button5(){
+        fase_2.style.display = 'none';
+				fase_5.style.display = 'block';
+}
+
+//ALLE FUNKTIONER TIL BUTTONS FASE 3
+function fase3button1(){
+        fase_3.style.display = 'none';
+				fase_1.style.display = 'block';
+}
+
+function fase3button2(){
+        fase_3.style.display = 'none';
+				fase_2.style.display = 'block';
+}
+
+function fase3button4(){
+        fase_3.style.display = 'none';
+				fase_4.style.display = 'block';
+}
+
+function fase3button5(){
+        fase_3.style.display = 'none';
+				fase_5.style.display = 'block';
+}
+
+//ALLE FUNKTIONER TIL BUTTONS FASE 4
+function fase4button1(){
+        fase_4.style.display = 'none';
+				fase_1.style.display = 'block';
+}
+
+function fase4button2(){
+        fase_4.style.display = 'none';
+				fase_2.style.display = 'block';
+}
+
+function fase4button3(){
+        fase_4.style.display = 'none';
+				fase_3.style.display = 'block';
+}
+
+function fase4button5(){
+        fase_4.style.display = 'none';
+				fase_5.style.display = 'block';
+}
+
+//ALLE FUNKTIONER TIL BUTTONS FASE 5
+function fase5button1(){
+        fase_5.style.display = 'none';
+				fase_1.style.display = 'block';
+}
+
+function fase5button2(){
+        fase_5.style.display = 'none';
+				fase_2.style.display = 'block';
+}
+
+function fase5button3(){
+        fase_5.style.display = 'none';
+				fase_3.style.display = 'block';
+}
+
+function fase5button4(){
+        fase_5.style.display = 'none';
+				fase_4.style.display = 'block';
+}
