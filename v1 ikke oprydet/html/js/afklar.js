@@ -1,52 +1,4 @@
-
-
-//var fase1 = document.getElementById("fase_1");
-//var fase2 = document.getElementById("fase_2");
-//var fase3 = document.getElementById("fase_3");
-//var fase4 = document.getElementById("fase_4");
-//var fase5 = document.getElementById("fase_5");
-
-/*
-var nextButton = document.getElementById("next_button");
-
-var faserArray = ["fase_1", "fase_2", "fase_3", "fase_4", "fase_5"];
-
-var currentFase = 0
-
-console.log(currentFase);
-console.log(faserArray[currentFase])
-function nextFase(){
-	for (var i = currentFase; i < faserArray.length; i++) {
-	 	faserArray[i].style.display = 'none';
-	 	faserArray[i + 1].style.display = 'block';
-	 }
-	 //if (faserArray[i].style.display = 'block') {
-
-//}
-}
-*/
-
-
-
-
-
-/*
- FUNGER
-function nextFase(){
-		fase_1.style.display = 'none';
-	 		fase_2.style.display = 'block';
-}
-
-*/
-
-//Funger ikke
-
-//if (faserArray[i].style.display = 'block') {
-//	 		faserArray[i].style.display = 'none';
-//	 		faserArray[i + 1].style.display = 'block';
-//	 	}
-
-
+//JS KODE FOR VIDEO
 let video = document.querySelector(".video");
 let glass = document.querySelector(".hour-glass");
 let btn = document.getElementById("play-pause");
@@ -87,12 +39,14 @@ function toggleFullscreen() {
     } else {
         btnFullscreen.className = "compress";
         document.querySelector(".videoplayer").requestFullscreen().catch(console.log);
-
     }
 }
 
+btnFullscreen.onclick = function() {
+    toggleFullscreen();
+}
 
-
+//JS KODE FOR "NEXT"-KNAP
 var showing = [1, 0, 0, 0, 0, 0];
 var faserArray = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5', 'fase_6'];
 function nextFase() {
@@ -179,7 +133,7 @@ function fase2button5(){
         fase_2.style.display = 'none';
 		fase_5.style.display = 'block';
 		showing[1] = 0
-		showing[4] = 1		
+		showing[4] = 1
 }
 
 function fase2button6(){
@@ -297,6 +251,7 @@ function fase5button6(){
 		showing[5] = 1
 }
 
+//JS KODE FOR POP-UP BESKED PÅ TILLYKKE SIDEN
 /* #region Pop up */
 var jsbtn = document.querySelector ('.button');
 var popupbg =document.querySelector ('.popup-bg');
@@ -306,7 +261,7 @@ var date = (tmrw.getDate()+1)+'/'+(tmrw.getMonth()+1)+'-'+tmrw.getFullYear();
 
 jsbtn.addEventListener ('click',function(){
     popupbg.classList.add('bg-active')
-}); 
+});
 
 popupclose.addEventListener ('click',function(){
     popupbg.classList.remove('bg-active')
