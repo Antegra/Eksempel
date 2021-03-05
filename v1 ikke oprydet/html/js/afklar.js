@@ -91,7 +91,9 @@ function toggleFullscreen() {
     }
 }
 
-
+btnFullscreen.onclick = function() {
+    toggleFullscreen();
+}
 
 var showing = [1, 0, 0, 0, 0, 0];
 var faserArray = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5', 'fase_6'];
