@@ -3676,27 +3676,28 @@ del af samme grid start */
 }
 
 .navn {
+	margin-top: 40px;
     display: flex;
-    width: 50%;
-    height: 30px;
+    width: 70%;
+   
 }
 
 .firma {
     display: flex;
-    width: 50%;
-    height: 30px;
+    width: 70%;
+    
 }
 
 .mail{
     display: flex;
-    width: 50%;
-    height: 30px;
+    width: 70%;
+    
 }
 
 .tlfnr {
     display: flex;
-    width: 50%;
-    height: 30px;
+    width: 70%;
+    
 }
 
 

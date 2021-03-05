@@ -47,8 +47,8 @@ btnFullscreen.onclick = function() {
 }
 
 //JS KODE FOR "NEXT"-KNAP
-var showing = [1, 0, 0, 0, 0, 0];
-var faserArray = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5', 'fase_6'];
+var showing = [1, 0, 0, 0, 0, 0, 0];
+var faserArray = ['fase_7', 'fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5', 'fase_6'];
 function nextFase() {
     var faseElementer = [];
     for (var i = 0; i < faserArray.length; i++) {
@@ -75,180 +75,259 @@ function nextFase() {
 function fase1button2(){
         fase_1.style.display = 'none';
 		fase_2.style.display = 'block';
-		showing[0] = 0
-		showing[1] = 1
+		showing[1] = 0
+		showing[2] = 1
 }
 
 function fase1button3(){
         fase_1.style.display = 'none';
 		fase_3.style.display = 'block';
-		showing[0] = 0
-		showing[2] = 1
+		showing[1] = 0
+		showing[3] = 1
 }
 
 function fase1button4(){
         fase_1.style.display = 'none';
 		fase_4.style.display = 'block';
-		showing[0] = 0
-		showing[3] = 1
+		showing[1] = 0
+		showing[4] = 1
 }
 
 function fase1button5(){
         fase_1.style.display = 'none';
 		fase_5.style.display = 'block';
-		showing[0] = 0
-		showing[4] = 1
+		showing[1] = 0
+		showing[5] = 1
 }
 
 function fase1button6(){
         fase_1.style.display = 'none';
 		fase_6.style.display = 'block';
-		showing[0] = 0
-		showing[5] = 1
+		showing[1] = 0
+		showing[6] = 1
 }
+
+function fase1button7(){
+        fase_1.style.display = 'none';
+		fase_7.style.display = 'block';
+		showing[1] = 0
+		showing[0] = 1
+}
+
 
 //ALLE FUNKTIONER TIL BUTTONS FASE 2
 function fase2button1(){
         fase_2.style.display = 'none';
 		fase_1.style.display = 'block';
-		showing[1] = 0
-		showing[0] = 1
+		showing[2] = 0
+		showing[1] = 1
 }
 
 function fase2button3(){
         fase_2.style.display = 'none';
 		fase_3.style.display = 'block';
-		showing[1] = 0
-		showing[2] = 1
+		showing[2] = 0
+		showing[3] = 1
 }
 
 function fase2button4(){
         fase_2.style.display = 'none';
 		fase_4.style.display = 'block';
-		showing[1] = 0
-		showing[3] = 1
+		showing[2] = 0
+		showing[4] = 1
 }
 
 function fase2button5(){
         fase_2.style.display = 'none';
 		fase_5.style.display = 'block';
-		showing[1] = 0
-		showing[4] = 1
+		showing[2] = 0
+		showing[5] = 1
 }
 
 function fase2button6(){
         fase_2.style.display = 'none';
 		fase_6.style.display = 'block';
-		showing[1] = 0
-		showing[5] = 1
+		showing[2] = 0
+		showing[6] = 1
+}
+
+function fase2button7(){
+        fase_2.style.display = 'none';
+		fase_7.style.display = 'block';
+		showing[2] = 0
+		showing[0] = 1
 }
 
 //ALLE FUNKTIONER TIL BUTTONS FASE 3
 function fase3button1(){
         fase_3.style.display = 'none';
 		fase_1.style.display = 'block';
-		showing[2] = 0
-		showing[0] = 1
+		showing[3] = 0
+		showing[1] = 1
 }
 
 function fase3button2(){
         fase_3.style.display = 'none';
 		fase_2.style.display = 'block';
-		showing[2] = 0
-		showing[1] = 1
+		showing[3] = 0
+		showing[2] = 1
 }
 
 function fase3button4(){
         fase_3.style.display = 'none';
 		fase_4.style.display = 'block';
-		showing[2] = 0
-		showing[3] = 1
+		showing[3] = 0
+		showing[4] = 1
 }
 
 function fase3button5(){
         fase_3.style.display = 'none';
 		fase_5.style.display = 'block';
-		showing[2] = 0
-		showing[4] = 1
+		showing[3] = 0
+		showing[5] = 1
 }
 
 function fase3button6(){
         fase_3.style.display = 'none';
 		fase_6.style.display = 'block';
-		showing[2] = 0
-		showing[5] = 1
+		showing[3] = 0
+		showing[6] = 1
+}
+function fase3button7(){
+        fase_3.style.display = 'none';
+		fase_7.style.display = 'block';
+		showing[3] = 0
+		showing[0] = 1
 }
 
 //ALLE FUNKTIONER TIL BUTTONS FASE 4
 function fase4button1(){
         fase_4.style.display = 'none';
 		fase_1.style.display = 'block';
-		showing[3] = 0
-		showing[0] = 1
+		showing[4] = 0
+		showing[1] = 1
 }
 
 function fase4button2(){
         fase_4.style.display = 'none';
 		fase_2.style.display = 'block';
-		showing[3] = 0
-		showing[1] = 1
+		showing[4] = 0
+		showing[2] = 1
 }
 
 function fase4button3(){
         fase_4.style.display = 'none';
 		fase_3.style.display = 'block';
-		showing[3] = 0
-		showing[2] = 1
+		showing[4] = 0
+		showing[3] = 1
 }
 
 function fase4button5(){
         fase_4.style.display = 'none';
 		fase_5.style.display = 'block';
-		showing[3] = 0
-		showing[4] = 1
+		showing[4] = 0
+		showing[5] = 1
 }
 
 function fase4button6(){
         fase_4.style.display = 'none';
 		fase_6.style.display = 'block';
-		showing[3] = 0
-		showing[5] = 1
+		showing[4] = 0
+		showing[6] = 1
+}
+function fase4button7(){
+        fase_4.style.display = 'none';
+		fase_7.style.display = 'block';
+		showing[4] = 0
+		showing[0] = 1
 }
 
 //ALLE FUNKTIONER TIL BUTTONS FASE 5
 function fase5button1(){
         fase_5.style.display = 'none';
 		fase_1.style.display = 'block';
-		showing[4] = 0
-		showing[0] = 1
+		showing[5] = 0
+		showing[1] = 1
 }
 
 function fase5button2(){
         fase_5.style.display = 'none';
 		fase_2.style.display = 'block';
-		showing[4] = 0
-		showing[1] = 1
+		showing[5] = 0
+		showing[2] = 1
 }
 
 function fase5button3(){
         fase_5.style.display = 'none';
 		fase_3.style.display = 'block';
-		showing[4] = 0
-		showing[2] = 1
+		showing[5] = 0
+		showing[3] = 1
 }
 
 function fase5button4(){
         fase_5.style.display = 'none';
 		fase_4.style.display = 'block';
-		showing[4] = 0
-		showing[3] = 1
+		showing[5] = 0
+		showing[4] = 1
 }
 
 function fase5button6(){
         fase_5.style.display = 'none';
 		fase_6.style.display = 'block';
-		showing[4] = 0
+		showing[5] = 0
+		showing[6] = 1
+}
+
+function fase5button(){
+        fase_5.style.display = 'none';
+		fase_6.style.display = 'block';
+		showing[5] = 0
+		showing[6] = 1
+}
+function fase5button7(){
+        fase_5.style.display = 'none';
+		fase_7.style.display = 'block';
+		showing[5] = 0
+		showing[0] = 1
+}
+
+//ALLE FUNKTIONER TIL BUTTONS FASE 7
+function fase7button1(){
+        fase_7.style.display = 'none';
+		fase_1.style.display = 'block';
+		showing[0] = 0
+		showing[1] = 1
+}
+
+function fase7button2(){
+        fase_7.style.display = 'none';
+		fase_2.style.display = 'block';
+		showing[0] = 0
+		showing[2] = 1
+}
+function fase7button3(){
+        fase_7.style.display = 'none';
+		fase_3.style.display = 'block';
+		showing[0] = 0
+		showing[3] = 1
+}
+function fase7button4(){
+        fase_7.style.display = 'none';
+		fase_4.style.display = 'block';
+		showing[0] = 0
+		showing[4] = 1
+}
+function fase7button5(){
+        fase_7.style.display = 'none';
+		fase_5.style.display = 'block';
+		showing[0] = 0
 		showing[5] = 1
+}
+function fase7button6(){
+        fase_7.style.display = 'none';
+		fase_6.style.display = 'block';
+		showing[0] = 0
+		showing[6] = 1
 }
 
 //JS KODE FOR POP-UP BESKED PÅ TILLYKKE SIDEN
