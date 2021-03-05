@@ -1,3 +1,11 @@
+
+
+/* Alt den CSS der er skrevet
+ op til linje 3330 er kopieret fra
+ House of codes hjemmeside og er ikke skrevet af os */ 
+
+
+
 .single-slider:after {
 	display: table;
 	clear: both;
@@ -3299,6 +3307,29 @@ h2 p {
 
 /*# sourceMappingURL=main.css.map */
 
+/* Alt den CSS der er skrevet
+før denne linje er kopieret fra
+House of codes hjemmeside og er ikke skrevet af os */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Alt CSS herefter er skrevet i forbindelse med Projekt 4 */ 
+
+
 /* Grid til de den overordnede struktur af 5 faser 
 i afklaringsforløbet samt title start */
 .grid-container {
@@ -3414,6 +3445,10 @@ disse skal have start */
 
 .deler_5 {
 	background-color: #D7734A;
+}
+
+.deler_7 {
+	background-color: #515f6d;
 }
 
 /* CSS til opdeler mellem knapper i toppen
