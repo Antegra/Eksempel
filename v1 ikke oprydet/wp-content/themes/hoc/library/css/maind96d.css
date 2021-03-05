@@ -3299,7 +3299,8 @@ h2 p {
 
 /*# sourceMappingURL=main.css.map */
 
-
+/* Grid til de den overordnede struktur af 5 faser 
+i afklaringsforløbet samt title start */
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -3319,6 +3320,11 @@ h2 p {
 	grid-area: title;
 	font-family: open sans;
 }
+
+/* Grid til de den overordnede struktur af 5 faser 
+i afklaringsforløbet samt title slut */
+
+/* Grid til knapperne i toppen af de fem faser start */
 
 .faser {
 	display: grid;
@@ -3377,27 +3383,13 @@ h2 p {
 	grid-area: fase_5_title;
 }
 
-/*
-#fase_1 {
-	display: block;
-}
+/* Grid til knapperne i toppen af de fem faser slut */
 
-#fase_2 {
-	display: none;
-}
 
-#fase_3 {
-	display: none;
-}
+/* CSS til opdeler mellem knapper i toppen
+af de 5 faser og info samt de 5 forskellige farver
+disse skal have start */
 
-#fase_4 {
-	display: none;
-}
-
-#fase_5 {
-	display: none;
-}
-*/
 .top_deler {
 	grid-area: top_deler;
 	border-radius: 25px;
@@ -3424,6 +3416,12 @@ h2 p {
 	background-color: #D7734A;
 }
 
+/* CSS til opdeler mellem knapper i toppen
+af de 5 faser og info samt de 5 forskellige farver
+disse skal have slut */
+
+/* CSS til info del af de 5 faser start */
+
 .info {
 	display: grid;
 	grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
@@ -3449,7 +3447,45 @@ h2 p {
 	grid-area: info_3;
 }
 
+/* CSS til info del af de 5 faser slut */
 
+/* CSS til nedeste del af de 5 faser start */
+
+.bund_deler { 
+	grid-area: bund_deler;
+	border-radius: 25px; 
+	height: 30px;
+}
+
+.bund { 
+	display: grid;
+	grid-area: bund; 
+	position: relative;
+	width: 100%;
+	text-align: center;
+	place-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* CSS til nedeste del af de 5 faser slut */
+
+/* CSS til knapperne i de 5 faser start */
+
+.bund_knap {
+	position: absolute;
+	z-index: -1;
+}
+
+.bund button {
+	display: grid;
+}
+
+.bund p {
+	font-family: Roboto Mono;
+	color: white;
+	margin: 0;
+}
 
 .next_button { 
 	display: grid;
@@ -3471,37 +3507,10 @@ h2 p {
 
 }
 
-.bund_deler { 
-	grid-area: bund_deler;
-	border-radius: 25px; 
-	height: 30px;
-}
+/* CSS til knapperne i de 5 faser slut */
 
-.bund { 
-	display: grid;
-	grid-area: bund; 
-	position: relative;
-	width: 100%;
-	text-align: center;
-	place-items: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.bund_knap {
-	position: absolute;
-	z-index: -1;
-}
-
-.bund button {
-	display: grid;
-}
-
-.bund p {
-	font-family: Roboto Mono;
-	color: white;
-	margin: 0;
-}
+/* CSS til grid på tillykke fase og øverste
+del af samme grid start */
 
 .grid-container2 {
     display: grid;
@@ -3531,6 +3540,11 @@ h2 p {
     grid-area: tillykke_top_deler;
 }
 
+/* CSS til grid på tillykke fase og øverste
+del af samme grid start */
+
+/* CSS til info del af grid på tillykke fase start */
+
 .tillykke_info {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -3540,7 +3554,10 @@ h2 p {
     grid-area: tillykke_info;
     margin-top: 10px;
 }
+/* CSS til info del af grid på tillykke fase slut */
 
+
+/* CSS til venstre del af grid på tillykke fase start */
 .tillykke_info_1 {
     grid-area: tillykke_info_1;
 }
@@ -3561,8 +3578,10 @@ h2 p {
     width: 33%;
     font-family: "Roboto Mono";
 }
+/* CSS til venstre del af grid på tillykke fase slut */
 
 
+/* CSS til højre del af grid på tillykke fase start */
 .tillykke_info_2 {
     grid-area: tillykke_info_2;
     display: grid;
@@ -3605,7 +3624,10 @@ h2 p {
 .tillykke_info_2_4 {
 	grid-area: tillykke_info_2_4;
 }
+/* CSS til højre del af grid på tillykke fase slut */
 
+
+/* CSS til formular på tillykke fase start */
 .oplysninger p {
     text-align: left;
     width: 100%;
@@ -3739,8 +3761,11 @@ ul {list-style-type: none;}
     padding: 10px;
     margin: 0;
 }
+/* CSS til formular på tillykke fase slut */
 
-container {
+
+/* CSS til video controls start */
+.container {
 	display: flex;
 	background: #FFF;
 	justify-content: center; 
@@ -3836,8 +3861,9 @@ container {
 	height: 10px;
 	background-color: orangered;
 }
+/* CSS til video controls slut */
 
-/* #region Pop up */
+/* CSS til pop up på tillykke fasen start */
 .popup-bg{
     position: fixed;
     top: 0;
@@ -3896,4 +3922,4 @@ container {
     font-weight: bold ;
     cursor: pointer;
 } 
-/* #endregion */
+/* CSS til pop up på tillykke fasen slut */
