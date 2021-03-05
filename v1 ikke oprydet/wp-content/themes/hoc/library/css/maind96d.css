@@ -3426,12 +3426,12 @@ h2 p {
 
 .info {
 	display: grid;
-	grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
+	grid-template-columns: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.5fr;
 	grid-template-rows: 1.6fr 0.4fr;
 	gap: 0px 0px;
 	grid-template-areas:
-	"info_1 . info_2 . info_3 . info_4 ."
-	"info_1 . info_2 . info_3 . info_4 next_button";
+	". info_1 . info_2 . info_3 ."
+	". info_1 . info_2 . info_3 next_button";
 	grid-area: info;
 	font-family: open sans;
 	margin-top: 10px;
@@ -3449,16 +3449,19 @@ h2 p {
 	grid-area: info_3;
 }
 
-.info_4 {
-	grid-area: info_4;
-}
+
 
 .next_button { 
 	display: grid;
 	grid-area: next_button;
 	position: relative;
 	place-items: center;
+	padding: none;
 	
+}
+
+.next_button_button {
+	display: grid;
 }
 
 .next_button_knap {
@@ -3481,6 +3484,8 @@ h2 p {
 	width: 100%;
 	text-align: center;
 	place-items: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .bund_knap {
@@ -3488,9 +3493,14 @@ h2 p {
 	z-index: -1;
 }
 
+.bund button {
+	display: grid;
+}
+
 .bund p {
 	font-family: Roboto Mono;
 	color: white;
+	margin: 0;
 }
 
 .grid-container2 {
@@ -3555,6 +3565,14 @@ h2 p {
 
 .tillykke_info_2 {
     grid-area: tillykke_info_2;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr ;
+    grid-template-rows: 0.2fr 1.2fr 0.6fr ;
+    gap: 0px 0px;
+    grid-template-areas:
+    "tillykke_info_2_1 tillykke_info_2_1"
+    "tillykke_info_2_2 tillykke_info_2_3"
+    "tillykke_info_2_4 tillykke_info_2_4";
     font-family: "Roboto Mono";
     background-color: #A6BB75;
 }
@@ -3570,6 +3588,22 @@ h2 p {
     font-family: "Roboto Mono";
     text-align: center;
     padding-bottom: 20px;
+}
+
+.tillykke_info_2_1 {
+	grid-area: tillykke_info_2_1;
+}
+
+.tillykke_info_2_2 {
+	grid-area: tillykke_info_2_2;
+}
+
+.tillykke_info_2_3 {
+	grid-area: tillykke_info_2_3;
+}
+
+.tillykke_info_2_4 {
+	grid-area: tillykke_info_2_4;
 }
 
 .oplysninger p {

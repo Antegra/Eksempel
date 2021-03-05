@@ -260,7 +260,7 @@ textarea{min-height:200px !important}
 			</button>
     </div>
     <div class="fase_3_img fase_img">
-    	<button onclick="n()">
+    	<button onclick="fase1button3()">
 				<svg width="100" height="100">
  			 		<circle cx="50" cy="50" r="40" stroke="#AA81AC" stroke-width="8" fill="white" />
  			 		<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">03</text>
@@ -325,13 +325,15 @@ textarea{min-height:200px !important}
     </div>
     <div class="next_button">
 
-		<button onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
+		<button class="next_button_button" onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
     </div>
   </div>
   <div class="bund_deler deler_1"></div>
   <div class="bund">
+  	<button onclick="fase1button6()">
   	<img class="bund_knap" src="img/contactButton1.svg">
   	<p>>>>>          Kontakt os nu!          <<<<</p>
+  	</button>
   </div>
 </div>
 
@@ -433,13 +435,15 @@ textarea{min-height:200px !important}
     </div>
     <div class="next_button">
 
-		<button onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
+		<button class="next_button_button" onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
     </div>
   </div>
   <div class="bund_deler deler_2"></div>
   <div class="bund">
+  	<button  onclick="fase2button6()">
   	<img class="bund_knap" src="img/contactButton1.svg">
   	<p>>>>>          Kontakt os nu!          <<<<</p>
+	</button>
   </div>
 </div>
 
@@ -548,13 +552,15 @@ textarea{min-height:200px !important}
     </div>
     <div class="next_button">
 
-		<button onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
+		<button onclick="nextFase()" class="next_button_button"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
     </div>
   </div>
   <div class="bund_deler deler_3"></div>
   <div class="bund">
+  	<button onclick="fase3button6()">
   	<img class="bund_knap" src="img/contactButton1.svg">
   	<p>>>>>          Kontakt os nu!          <<<<</p>
+	</button>
   </div>
 </div>
 
@@ -650,13 +656,15 @@ textarea{min-height:200px !important}
 
     <div class="next_button">
 
-		<button onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
+		<button class="next_button_button" onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
     </div>
   </div>
   <div class="bund_deler deler_4"></div>
   <div class="bund">
+  	<button onclick="fase4button6()">
   	<img class="bund_knap" src="img/contactButton1.svg">
   	<p>>>>>          Kontakt os nu!          <<<<</p>
+	</button>
   </div>
 </div>
 
@@ -684,7 +692,7 @@ textarea{min-height:200px !important}
 			</button>
     </div>
     <div class="fase_2_img fase_img">
-			<button onclick="fase5button2">
+			<button onclick="fase5button2()">
     	<svg width="100" height="100">
  			 <circle cx="50" cy="50" r="40" stroke="#D8A55A" stroke-width="8" fill="white" />
  			 <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">02</text>
@@ -757,18 +765,20 @@ textarea{min-height:200px !important}
 
     <div class="next_button" id="next_button">
 
-		<button onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
+		<button class="next_button_button" onclick="nextFase()"> <img  class="next_button_knap" src="img/nextButton3.png"></button>
     </div>
   </div>
   <div class="bund_deler deler_5"></div>
   <div class="bund">
+  	<button onclick="fase5button6()">
   	<img class="bund_knap" src="img/contactButton1.svg">
   	<p>>>>>          Kontakt os nu!          <<<<</p>
+  	</button>
   </div>
 </div>
 
 
-<div class="grid-container2">
+<div class="grid-container2" id="fase_6" style="display: none">
     <div class="tillykke">
         <h2>Tillykke!</h2>
         <p>Du har nu taget det første skridt mod starten af dit projekt.</p>
@@ -829,28 +839,13 @@ textarea{min-height:200px !important}
         </div>
 
         <div class="tillykke_info_2">
-            <h2>Bliv kontaktet af os</h2>
-            <p>Er du interesseret i at høre mere? Udfyld nedenstående formular, og vi kontakter dig hurtigst muligt.</p>
+        	<div class="tillykke_info_2_1">
+        		<h2>Bliv kontaktet af os</h2>
+            	<p>Er du interesseret i at høre mere? Udfyld nedenstående formular, og vi kontakter dig hurtigst muligt.</p>
+        	</div>
 
-            <div class="oplysninger">
-                <div class="navn">
-                    <p>Navn</p>
-                    <p><input type="name" name="name"></p>
-                </div>
-                <div class="firma">
-                    <p>Firma</p> 
-                    <p><input type="firm" name="firm"></p>
-                </div>
-                <div class="mail">
-                    <p>E-mail</p>
-                    <p><input type="e-mail" name="e-mail"></p>
-                </div>
-                <div class="tlfnr">
-                    <p>Tlf</p>
-                    <p><input type="tlf" name="tlf"></p>
-                </div>
-
-            <div class="calender">
+        	<div class="tillykke_info_2_2">
+        		<div class="calender">
                     <div class="month">      
                         <ul>
                             <li class="prev">&#10094;</li>
@@ -907,19 +902,52 @@ textarea{min-height:200px !important}
                         </ul>
             </div>
             </div>
+        	
 
-            <div class="btn">
-                <a href="#" class="button">Send</a>
-            </div>
+        	<div class="tillykke_info_2_3">
+        		<div class="oplysninger">
+                <div class="navn">
+                    <p>Navn</p>
+                    <p><input type="name" name="name"></p>
+                </div>
+                <div class="firma">
+                    <p>Firma</p> 
+                    <p><input type="firm" name="firm"></p>
+                </div>
+                	<div class="mail">
+                   		<p>E-mail</p>
+                   		<p><input type="e-mail" name="e-mail"></p>
+               		</div>
+                	<div class="tlfnr">
+                    	<p>Tlf</p>
+                    	<p><input type="tlf" name="tlf"></p>
+                	</div>
+        		</div>
+        	</div>
 
-            <br>
-            <hr>
-            <div class="kontaktoplysninger">
-                <p>House of Code</p>
-                <p>E-mail: houseofcode@gmail.com
+        	<div class="tillykke_info_2_4">
+        		<div class="kontaktoplysninger">
+                	<p>House of Code</p>
+                	<p>E-mail: houseofcode@gmail.com
                 <br>
-                Tlf. nr.: +45 70 84 85 40</p>
+                	Tlf. nr.: +45 70 84 85 40</p>
+            	</div>
+        		<div class="btn">
+                	<a href="#" class="button">Send</a>
+
+    	        </div>
             </div>
+
+            
+
+        	</div>
+
+
+            
+
+            
+
+            
 
 
 
