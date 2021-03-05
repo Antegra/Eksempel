@@ -212,5 +212,10 @@ body {font-family: Verdana, sans-serif;}
     margin: 0;
 }
 
-
-
+#back-but {
+    color: #6696ac;
+    font-weight: 700;
+    text-decoration: underline;
+    transition: color 200ms;
+    text-transform: none;
+}

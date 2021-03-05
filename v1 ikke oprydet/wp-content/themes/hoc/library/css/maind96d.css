@@ -2,7 +2,7 @@
 
 /* Alt den CSS der er skrevet
  op til linje 3330 er kopieret fra
- House of codes hjemmeside og er ikke skrevet af os */ 
+ House of codes hjemmeside og er ikke skrevet af os */
 
 
 
@@ -3327,10 +3327,10 @@ House of codes hjemmeside og er ikke skrevet af os */
 
 
 
-/* Alt CSS herefter er skrevet i forbindelse med Projekt 4 */ 
+/* Alt CSS herefter er skrevet i forbindelse med Projekt 4 */
 
 
-/* Grid til de den overordnede struktur af 5 faser 
+/* Grid til de den overordnede struktur af 5 faser
 i afklaringsforløbet samt title start */
 .grid-container {
 	display: grid;
@@ -3352,7 +3352,7 @@ i afklaringsforløbet samt title start */
 	font-family: open sans;
 }
 
-/* Grid til de den overordnede struktur af 5 faser 
+/* Grid til de den overordnede struktur af 5 faser
 i afklaringsforløbet samt title slut */
 
 /* Grid til knapperne i toppen af de fem faser start */
@@ -3486,15 +3486,15 @@ disse skal have slut */
 
 /* CSS til nedeste del af de 5 faser start */
 
-.bund_deler { 
+.bund_deler {
 	grid-area: bund_deler;
-	border-radius: 25px; 
+	border-radius: 25px;
 	height: 30px;
 }
 
-.bund { 
+.bund {
 	display: grid;
-	grid-area: bund; 
+	grid-area: bund;
 	position: relative;
 	width: 100%;
 	text-align: center;
@@ -3522,13 +3522,13 @@ disse skal have slut */
 	margin: 0;
 }
 
-.next_button { 
+.next_button {
 	display: grid;
 	grid-area: next_button;
 	position: relative;
 	place-items: center;
 	padding: none;
-	
+
 }
 
 .next_button_button {
@@ -3564,6 +3564,13 @@ del af samme grid start */
     text-align: center;
     font-family: "Roboto Mono";
     padding: 30px;
+		position: relative;
+}
+.tillykke button{
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 10px;
+	left: 15px;
 }
 
 .tillykke h2 {
@@ -3803,8 +3810,8 @@ ul {list-style-type: none;}
 .container {
 	display: flex;
 	background: #FFF;
-	justify-content: center; 
-	align-items: center; 
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 }
 
@@ -3930,7 +3937,7 @@ ul {list-style-type: none;}
     font-family: 'Open Sans';
     position: relative;
     background-image: url(../../../../../img/popup-img.png);
-} 
+}
 .popup h2{
     color: #515f6d;
     font-size: 30px;
@@ -3956,5 +3963,5 @@ ul {list-style-type: none;}
     color: #515f6d;
     font-weight: bold ;
     cursor: pointer;
-} 
+}
 /* CSS til pop up på tillykke fasen slut */
