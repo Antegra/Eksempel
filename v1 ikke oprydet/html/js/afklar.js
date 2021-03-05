@@ -70,7 +70,26 @@ video.addEventListener('timeupdate', function() {
 	glass.style.width = glassPos * 100 + "%";
 });
 
+let btnFullscreen = document.getElementById("expand-compress");
+let container = document.querySelector(".videoplayer");
 
+function getFullscreenElement() {
+    return document.getFullscreenElement
+    || document.webkitFullscreenElement
+	|| document.mozFullscreenElement
+    || document.msFullscreenElement;
+}
+
+function toggleFullscreen() {
+    if (getFullscreenElement()) {
+        btnFullscreen.className = "expand";
+        document.exitFullscreen();
+    } else {
+        btnFullscreen.className = "compress";
+        document.querySelector(".videoplayer").requestFullscreen().catch(console.log);
+
+    }
+}
 
 
 

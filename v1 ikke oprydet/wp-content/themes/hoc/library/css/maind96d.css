@@ -3803,3 +3803,22 @@ container {
 #play-pause.pause::before {
 	content: '\f28b';
 }
+
+#expand-compress::before {
+    content:'\f065';
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    font-weight: 900;
+    font-size: 28px;
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+}
+
+#expand-compress.expand::before {
+    content: '\f065';
+}
+
+#expand-compress.compress::before {
+    content: '\f066';
+}
