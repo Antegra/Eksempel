@@ -296,3 +296,22 @@ function fase5button6(){
 		showing[4] = 0
 		showing[5] = 1
 }
+
+/* #region Pop up */
+var jsbtn = document.querySelector ('.button');
+var popupbg =document.querySelector ('.popup-bg');
+var popupclose =document.querySelector ('.popup-close');
+var tmrw = new Date();
+var date = (tmrw.getDate()+1)+'/'+(tmrw.getMonth()+1)+'-'+tmrw.getFullYear();
+
+jsbtn.addEventListener ('click',function(){
+    popupbg.classList.add('bg-active')
+}); 
+
+popupclose.addEventListener ('click',function(){
+    popupbg.classList.remove('bg-active')
+});
+
+
+document.getElementById("date").innerHTML = date;
+/* #endregion */
