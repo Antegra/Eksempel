@@ -47,6 +47,32 @@ function nextFase(){
 //	 	}
 
 
+let video = document.querySelector(".video");
+let glass = document.querySelector(".hour-glass");
+let btn = document.getElementById("play-pause");
+
+function togglePlayPause() {
+	if (video.paused) {
+		btn.className = "pause";
+		video.play();
+	} else {
+		btn.className = "play";
+		video.pause();
+	}
+}
+
+btn.onclick = function() {
+	togglePlayPause();
+}
+
+video.addEventListener('timeupdate', function() {
+	let glassPos = video.currentTime / video.duration;
+	glass.style.width = glassPos * 100 + "%";
+});
+
+
+
+
 
 var showing = [1, 0, 0, 0, 0, 0];
 var faserArray = ['fase_1', 'fase_2', 'fase_3', 'fase_4', 'fase_5', 'fase_6'];

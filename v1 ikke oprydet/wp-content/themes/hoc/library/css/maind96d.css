@@ -3739,3 +3739,67 @@ ul {list-style-type: none;}
     padding: 10px;
     margin: 0;
 }
+
+container {
+	display: flex;
+	background: #FFF;
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh;
+}
+
+.video {
+	width: 100%;
+}
+
+.videoplayer {
+	width: 100%;
+	max-width: 800px;
+	position: relative;
+	overflow: hidden;
+}
+
+.videoplayer:hover .controls {
+	transform: translateY(0);
+}
+
+.controls {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	flex-wrap: wrap;
+	background: rgba(0, 0, 0, 0.7);
+	transform: translateY(100%) translateY(-5px); /*Denne gør at controlpanelet går 100% ned - gemmer det*/
+	transition: all 0.2s;
+}
+
+.buttons1 {
+	padding: 10px;
+	display: flex;
+}
+
+.buttons1 button {
+	background: none;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+#play-pause::before {
+	content: '\f144';
+	font-family: 'Font Awesome 5 free';
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	font-size: 28px;
+	color: #FFF;
+}
+
+#play-pause.play::before {
+	content: '\f144';
+}
+
+#play-pause.pause::before {
+	content: '\f28b';
+}
