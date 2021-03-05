@@ -3822,3 +3822,19 @@ container {
 #expand-compress.compress::before {
     content: '\f066';
 }
+
+
+.time-bar {
+	height: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+}
+
+.hour-glass {
+	height: 10px;
+	background-color: orangered;
+}
+
+
